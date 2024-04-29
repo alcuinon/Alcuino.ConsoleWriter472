@@ -4,9 +4,9 @@ ConsoleWriter472 is a C# utility class designed to enhance console output capabi
 
 ## Properties
 
-- IsTypeWriterMode = false
-- TypeWriterSpeed = 2
-- IsTypeWriterByWord = false
+- IsTypeWriterMode (false as default, optional)
+- TypeWriterSpeed (2 as default)
+- IsTypeWriterByWord = false (false as default)
 
 ## Methods
 
@@ -17,6 +17,7 @@ ConsoleWriter472 is a C# utility class designed to enhance console output capabi
 - TypeWrite()
 - TypeWriteLine()
 - ReadLine()
+- WriteMenu() new!
 
 ## Features
 
@@ -35,12 +36,17 @@ ConsoleWriter472 is a C# utility class designed to enhance console output capabi
 - **Input Handling**
   - Read user input with customizable prompt colors.
 
+- **Creates Functional Menu**
+  - Create a simple menus that returns integer on selected menu
+  - Customizable menu, can change foreground/background color
+  - Disable instructions used or you can have your own instructions
+
 ## Usage
 
 ### Typewriter Mode
 
 ```csharp
-// Enable typewriter mode
+// Enable typewriter mode, allow ConsoleWriter.Write and ConsoleWriter.WriteLine to take effect
 ConsoleWriter.IsTypeWriterMode = true;
 
 // Set typing speed (in milliseconds)
@@ -85,4 +91,19 @@ ConsoleWriter.WriteHeader("ConsoleWriter472", ConsoleColor.White, ConsoleColor.D
 ```csharp
 // Prompt user for input
 string userInput = ConsoleWriter.ReadLine(ConsoleColor.Yellow);
+```
+
+### Create Menu
+
+```csharp
+// create menu
+string[] menus = {
+        "Add Person",
+        "Update Person",
+        "Add Person",
+        "Display Somthing",
+        "Exit",
+    };
+
+int option = ConsoleWriter.WriteMenu(menus);
 ```

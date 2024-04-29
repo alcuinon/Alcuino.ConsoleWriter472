@@ -2,6 +2,10 @@
 
 ConsoleWriter472 is a C# utility class designed to enhance console output capabilities with additional features for text alignment, colors, typewriter-like effects, and structured formatting.
 
+
+
+![ConsoleWriter_Write](https://github.com/alcuinon/Alcuino.ConsoleWriter472/blob/main/Alcuino.ConsoleWriter472/Files/ConsoleWriter_Write.gif)
+
 ## Properties
 
 - IsTypeWriterMode (false as default, optional)
@@ -42,6 +46,8 @@ ConsoleWriter472 is a C# utility class designed to enhance console output capabi
   - Disable instructions used or you can have your own instructions
 
 ## Usage
+
+![ConsoleWriter_TypeWriter](https://github.com/alcuinon/Alcuino.ConsoleWriter472/blob/main/Alcuino.ConsoleWriter472/Files/ConsoleWriter_TypeWriter.gif)
 
 ### Typewriter Mode
 
@@ -92,6 +98,8 @@ ConsoleWriter.WriteHeader("ConsoleWriter472", ConsoleColor.White, ConsoleColor.D
 // Prompt user for input
 string userInput = ConsoleWriter.ReadLine(ConsoleColor.Yellow);
 ```
+
+![ConsoleWriter_WriteMenu](https://github.com/alcuinon/Alcuino.ConsoleWriter472/blob/main/Alcuino.ConsoleWriter472/Files/ConsoleWriter_WriteMenu.gif)
 
 ### Create Menu
 

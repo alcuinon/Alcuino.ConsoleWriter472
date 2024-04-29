@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WriteColumnTest.cs" />
+    <Compile Include="WriteMenuTest.cs" />
+    <Compile Include="WriteAndWriteLineTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

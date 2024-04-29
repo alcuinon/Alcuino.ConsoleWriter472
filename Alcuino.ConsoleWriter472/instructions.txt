@@ -1,0 +1,6 @@
+
+-- if new, it creates nuspec file
+nuget spec Alcuino.ConsoleWriter472.csproj
+
+-- if nuspec file exist, 
+nuget pack
